@@ -2,12 +2,12 @@
 name: hermes
 description: "Hermes Agent CLI reference for Claude Code: oneshot image generation, baoyu-infographic, and blog automation."
 version: 1.0.0
-author: kimdh
+author: goddaehee
 license: MIT
 platforms: [macos]
 metadata:
   tags: [hermes, image-gen, infographic, blog-automation, ai-agent]
-  homepage: https://github.com/kimdh/hermes-claude-skill
+  homepage: https://github.com/goddaehee/hermes-claude-skill
 ---
 
 # Hermes Agent — Claude Code 활용 가이드
