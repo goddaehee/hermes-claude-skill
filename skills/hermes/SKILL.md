@@ -147,7 +147,7 @@ hermes -z "PROMPT" -m gpt-5.5 --provider codex
 | `corporate-memphis` | 평면 벡터, 선명한 색상 |
 | `bold-graphic` | 코믹 스타일, 하프톤 |
 | `ikea-manual` | 미니멀 선 아트 |
-| `dashboard` | 회색조 인터페이스 목업 |
+| `ui-wireframe` | 회색조 인터페이스 목업 |
 | `cyberpunk-neon` | 네온 글로우, 미래적 |
 | `kawaii` | 일본 귀여운 스타일 |
 | `chalkboard` | 칠판 위 분필 |
@@ -230,7 +230,7 @@ hermes -z "PROMPT" -m gpt-5.5 --provider codex
 
 ## 주의 사항
 
-- **cmux pane 자동화 비추천**: `cmux send`로 Hermes 페인에 메시지 전송 시 멀티라인 텍스트가 Enter로 분리됨. 자동화는 반드시 `hermes -z` oneshot 모드 사용.
+- **cmux pane 자동화 비추천**: `cmux send`로 Hermes 페인에 메시지 전송 시 멀티라인 텍스트가 Enter로 분리됨. 자동화는 `hermes chat -Q`(기본 패턴) 또는 `hermes chat -Q --source tool`을 사용. `hermes -z`는 레거시 플래그이며 `chat -Q`와 기능이 겹침.
 - **URL vs 로컬 path**: `image_generate` 툴이 URL 또는 로컬 path를 반환할 수 있음. wrapper 스크립트에서 URL 감지 시 `curl -L -o` 다운로드 처리 필수.
 - **Codex 인증**: `hermes status`에서 `Provider: OpenAI Codex` 표시 시 Codex 연결 활성. 인증 만료 시 `hermes login codex` 재실행.
 - **한국어 텍스트 렌더링**: gpt-image-2의 한글 인포그래픽 내 텍스트 렌더링 안정성은 실측 필요 [UNVERIFIED]. 깨짐 시 baoyu 스킬 프롬프트에 "minimal text, use English labels only" 추가 또는 `alt_ko`/`figcaption`으로 보완.
