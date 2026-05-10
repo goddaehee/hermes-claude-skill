@@ -1,0 +1,11 @@
+{
+  "name": "hermes-claude-skill",
+  "version": "1.0.0",
+  "description": "Claude Code skill for Hermes Agent CLI — oneshot image generation, baoyu-infographic (21 layouts × 21 styles), and blog automation.",
+  "author": {
+    "name": "kimdh"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/kimdh/hermes-claude-skill",
+  "skills": ["./skills/hermes"]
+}
